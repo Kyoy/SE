@@ -15,7 +15,7 @@
 //气球
 typedef struct ball
 {
-    double x;       //圆心x坐标
+    double x;  //圆心x坐标
     double y;		//圆心y坐标
     double r;		//圆半径
 }Ball;
