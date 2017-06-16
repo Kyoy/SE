@@ -1,4 +1,4 @@
-
+/* https://github.com/Kyoy/SE*/
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -28,7 +28,7 @@ void putBall();								//¸Ä±äÆøÇòµÄ³õÊ¼Î»ÖÃ£¬ÇóµÄÂú×ãÌõ¼şµÄÆøÇò(ÆøÇòÊÇ·ñÖØµş ÊÇ·
 void putPoint(double x, double y, double z);			//·ÅÖÃµã
 
 BallList *head = NULL;                      //Á´±í±íÍ·
-double step = 0.01;							//¸Ä±äÆøÇòÎ»ÖÃµÄ×îĞ¡µ¥Î»
+double step = 0.1;							//¸Ä±äÆøÇòÎ»ÖÃµÄ×îĞ¡µ¥Î»
 int num = 0;                                //·ÅÖÃÆøÇòµÄ¸öÊı
 double sumr = 0;							//ÓÃÀ´¼ÇÂ¼r^2Ö®ºÍ
 
@@ -71,7 +71,7 @@ void insert(Ball ball)
 
 void putBall()
 {
-    Ball ball = {-1 + step, -1 + step, -1 + step, 0};           //step=0.01
+    Ball ball = {-1 + step, -1 + step, -1 + step, 0};           //step=0.1
     Ball maxBall = ball;
     int i, j, k;
     for (i = 0; ball.x < 1; ++i)
